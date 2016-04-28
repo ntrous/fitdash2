@@ -1082,9 +1082,9 @@
     <Content Include="Scripts\angular\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FitDash2.Core\FitDash2.Core.csproj">
+    <ProjectReference Include="..\FitDash2.Core\Template.Core.csproj">
       <Project>{51aaac5b-3412-4725-bb52-01f97c147882}</Project>
-      <Name>FitDash2.Core</Name>
+      <Name>Template.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

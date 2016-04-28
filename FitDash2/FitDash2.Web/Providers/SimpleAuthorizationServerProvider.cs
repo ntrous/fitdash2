@@ -2,10 +2,10 @@
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-using FitDash2.Core.Models;
-using FitDash2.Core.Repositories.Implementation;
+using Template.Core.Models;
+using Template.Core.Repositories.Implementation;
 
-namespace FitDash2.Web.Providers
+namespace Template.Web.Providers
 {
     public class SimpleAuthorizationServerProvider : OAuthAuthorizationServerProvider
     {

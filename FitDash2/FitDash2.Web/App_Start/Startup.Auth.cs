@@ -8,10 +8,10 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using FitDash2.Web.Providers;
-using FitDash2.Core.Models;
+using Template.Web.Providers;
+using Template.Core.Models;
 
-namespace FitDash2.Web
+namespace Template.Web
 {
     public partial class Startup
     {

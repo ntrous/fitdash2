@@ -3,11 +3,11 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using System;
 using System.Web.Http;
-using FitDash2.Web.Providers;
+using Template.Web.Providers;
 
-[assembly: OwinStartup(typeof(FitDash2.Web.Startup))]
+[assembly: OwinStartup(typeof(Template.Web.Startup))]
 
-namespace FitDash2.Web
+namespace Template.Web
 {
     public partial class Startup
     {

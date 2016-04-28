@@ -2,7 +2,7 @@ using Microsoft.Practices.Unity;
 using System.Web.Http;
 using Unity.WebApi;
 
-namespace FitDash2.Web
+namespace Template.Web
 {
     public static class UnityConfig
     {

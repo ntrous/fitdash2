@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FitDash2.Core.Models
+namespace Template.Core.Models
 {
     // Models returned by AccountController actions.
 

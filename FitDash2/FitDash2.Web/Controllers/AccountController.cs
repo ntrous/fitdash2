@@ -12,11 +12,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using FitDash2.Core.Models;
-using FitDash2.Web.Providers;
-using FitDash2.Web.Results;
+using Template.Core.Models;
+using Template.Web.Providers;
+using Template.Web.Results;
 
-namespace FitDash2.Web.Controllers
+namespace Template.Web.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]

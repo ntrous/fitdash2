@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace FitDash2.Core.Models
+namespace Template.Core.Models
 {
     // Models used as parameters to AccountController actions.
 

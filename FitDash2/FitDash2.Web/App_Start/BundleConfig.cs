@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace FitDash2.Web
+namespace Template.Web
 {
     public class BundleConfig
     {

@@ -1,10 +1,10 @@
-﻿using FitDash2.Core.Models;
+﻿using Template.Core.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Threading.Tasks;
 
-namespace FitDash2.Core.Repositories.Implementation
+namespace Template.Core.Repositories.Implementation
 {
     public class AuthRepository : IDisposable
     {

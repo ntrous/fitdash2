@@ -6,9 +6,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using FitDash2.Core.Models;
+using Template.Core.Models;
 
-namespace FitDash2.Web.Providers
+namespace Template.Web.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
