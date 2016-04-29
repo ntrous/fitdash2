@@ -227,6 +227,8 @@
     <Content Include="AngularApp\Account\AuthService.js" />
     <Content Include="AngularApp\Account\Login.html" />
     <Content Include="AngularApp\Account\LoginController.js" />
+    <Content Include="AngularApp\Account\Register.html" />
+    <Content Include="AngularApp\Account\RegisterController.js" />
     <Content Include="AngularApp\app.js" />
     <Content Include="AngularApp\Common\AuthInterceptorService.js" />
     <Content Include="AngularApp\Home\Home.html" />
@@ -1086,6 +1088,9 @@
       <Project>{51aaac5b-3412-4725-bb52-01f97c147882}</Project>
       <Name>Template.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

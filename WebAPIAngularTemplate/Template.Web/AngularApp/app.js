@@ -32,6 +32,12 @@ angularApp.config(['$routeProvider', '$locationProvider',
             title: 'Login',
             caseInsensitiveMatch: true
         })
+        .when('/Register', {
+            templateUrl: '../AngularApp/Account/Register.html',
+            controller: 'registerCtrl',
+            title: 'Register',
+            caseInsensitiveMatch: true
+        })
         .otherwise({
             redirectTo: '/'
         });

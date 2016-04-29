@@ -1,10 +1,12 @@
 ﻿<form class="form-login col-md-3" role="form">
-    <h2 class="form-login-heading">Login</h2>
+    <h2 class="form-login-heading">Register</h2>
     <span ng-show="spinner"><i class="loading fa fa-cog fa-spin"></i></span>
     <div ng-class="{'content-loading':spinner}">
         <input type="text" class="form-control" placeholder="Username" data-ng-model="loginData.userName" required autofocus>
         <br />
         <input type="password" class="form-control" placeholder="Password" data-ng-model="loginData.password" required>
+        <br />
+        <input type="password" class="form-control" placeholder="Confirm-Password" data-ng-model="loginData.password" required>
         <br />
         <button class="btn btn-info" type="submit" data-ng-click="login()">Login</button>
         <br /><br />
