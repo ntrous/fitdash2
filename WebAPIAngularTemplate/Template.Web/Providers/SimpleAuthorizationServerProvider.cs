@@ -1,9 +1,8 @@
-﻿using Microsoft.Owin.Security.OAuth;
+﻿using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security.OAuth;
 using System.Security.Claims;
 using System.Threading.Tasks;
-
 using Template.Core.Models;
-using Template.Core.Repositories.Implementation;
 
 namespace Template.Web.Providers
 {
@@ -19,16 +18,13 @@ namespace Template.Web.Providers
 
             context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
 
-            ApplicationUser user = null;
-            using (AuthRepository _repo = new AuthRepository())
-            {
-                user = await _repo.FindUser(context.UserName, context.Password);
+            var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
+            ApplicationUser user = await userManager.FindAsync(context.UserName, context.Password);
 
-                if (user == null)
-                {
-                    context.SetError("invalid_grant", "The user name or password is incorrect.");
-                    return;
-                }
+            if (user == null)
+            {
+                context.SetError("invalid_grant", "The user name or password is incorrect.");
+                return;
             }
 
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);

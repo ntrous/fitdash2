@@ -1,4 +1,4 @@
-﻿using Template.Core.Models;
+using Template.Core.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
