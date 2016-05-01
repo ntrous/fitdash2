@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TemplateReport>
+  <ItemTemplates />
+  <ProjectTemplates>
+    <ProjectTemplate Path="..\Template.Web\_Definitions\_project.vstemplate.xml" Name="Template name here" Description="Project description here" ProjectType="CSharp" ProjectSubType="" />
+    <ProjectTemplate Path="..\Template.Core\_Definitions\_project.vstemplate.xml" Name="Web-API-Angular-Template" Description="Project description here" ProjectType="CSharp" ProjectSubType="" />
+  </ProjectTemplates>
+  <Snippets />
+</TemplateReport>
