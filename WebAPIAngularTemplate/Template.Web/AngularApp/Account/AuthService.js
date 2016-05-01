@@ -11,7 +11,7 @@
  
         _logOut();
  
-        return $http.post('/account/register', registration).then(function (response) {
+        return $http.post('api/Account/register', registration).then(function (response) {
             return response;
         });
  

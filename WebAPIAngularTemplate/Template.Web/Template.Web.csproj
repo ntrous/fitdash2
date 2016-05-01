@@ -230,6 +230,7 @@
     <Content Include="AngularApp\Account\Register.html" />
     <Content Include="AngularApp\Account\RegisterController.js" />
     <Content Include="AngularApp\app.js" />
+    <Content Include="AngularApp\Common\AngularAppDirectives.js" />
     <Content Include="AngularApp\Common\AuthInterceptorService.js" />
     <Content Include="AngularApp\Home\Home.html" />
     <Content Include="AngularApp\Home\HomeController.js" />
