@@ -1,15 +1,16 @@
 ﻿angularAppControllers.controller('registerCtrl', ['$scope', '$location', 'authService', 'localStorageService', function ($scope, $location, authService, localStorageService) {
 
-    $scope.loginData = {
-        userName: "",
-        password: ""
+    $scope.registerData = {
+        email: "",
+        password: "",
+        confirmPassword: ""
     };
 
     $scope.message = "";
 
     $scope.register = function () {
         $scope.spinner = true;
-        authService.login($scope.loginData).then(function (response) {
+        authService.saveRegistration($scope.registerData).then(function (response) {
             $scope.spinner = false;
             $location.path('/');
         },

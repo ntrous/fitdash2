@@ -4,7 +4,7 @@
   'ngCookies',
   'angularApp.controllers',
   'angularApp.service',
-  'angularApp.common',
+  'angularApp.directives',
   'angulartics',
   'angulartics.google.analytics',
   'LocalStorageModule'
@@ -12,7 +12,7 @@
 
 var angularAppControllers = angular.module('angularApp.controllers', ['angularApp.service']);
 var angularAppServices = angular.module('angularApp.service', []);
-var angularAppCommon = angular.module('angularApp.common', []);
+var angularAppDirectives = angular.module('angularApp.directives', []);
 
 angularApp.config(['$routeProvider', '$locationProvider',
     function ($routeProvider, $locationProvider) {
