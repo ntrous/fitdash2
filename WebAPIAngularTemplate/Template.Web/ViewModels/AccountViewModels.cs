@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Template.Core.Models
+namespace Template.Web.ViewModels
 {
     // Models returned by AccountController actions.
 
