@@ -15,6 +15,7 @@ using Microsoft.Owin.Security.OAuth;
 using Template.Core.Models;
 using Template.Web.Providers;
 using Template.Web.Results;
+using Template.Web.ViewModels;
 
 namespace Template.Web.Controllers
 {
