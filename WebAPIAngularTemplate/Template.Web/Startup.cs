@@ -5,7 +5,8 @@ using System;
 using System.Web.Http;
 using Template.Web.Providers;
 
-[assembly: OwinStartupAttribute(typeof(Template.Web.Startup))]
+[assembly: OwinStartup(typeof(Template.Web.Startup))]
+
 namespace Template.Web
 {
     public partial class Startup
@@ -16,7 +17,9 @@ namespace Template.Web
 
             ConfigureOAuth(app);
 
+            WebApiConfig.Register(config);
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+            app.UseWebApi(config);
         }
 
         public void ConfigureOAuth(IAppBuilder app)
