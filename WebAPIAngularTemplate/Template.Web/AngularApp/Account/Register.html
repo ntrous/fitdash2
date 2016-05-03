@@ -8,10 +8,12 @@
         <br />
         <input type="password" compareTo="registerData.password" class="form-control" placeholder="Confirm your password" data-ng-model="registerData.confirmPassword" required>
         <br />
-        <button class="btn btn-info" type="submit" data-ng-click="register()">Login</button>
+        <button class="btn btn-info" type="submit" data-ng-click="register()">Register</button>
         <br /><br />
         <div data-ng-hide="message == ''" class="alert alert-danger">
-            {{message}}
+            <p ng-repeat="m in message">
+                {{m}}
+            </p>
         </div>
     </div>
 </form>

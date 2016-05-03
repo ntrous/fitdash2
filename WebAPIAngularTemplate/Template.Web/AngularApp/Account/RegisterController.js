@@ -6,7 +6,7 @@
         confirmPassword: ""
     };
 
-    $scope.message = "";
+    $scope.message = [];
 
     $scope.register = function () {
         $scope.spinner = true;
@@ -16,7 +16,11 @@
         },
          function (err) {
              $scope.spinner = false;
-             $scope.message = err.error_description;
+             var data = err.data.ModelState
+
+             angular.forEach(data, function (value, key) {
+                 $scope.message.push(value[0]);
+             });
          });
     };
     
