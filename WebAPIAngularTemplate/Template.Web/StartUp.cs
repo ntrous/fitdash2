@@ -1,10 +1,11 @@
-﻿using Microsoft.Owin;		
-using Microsoft.Owin.Security.OAuth;		
-using Owin;		
-using System;		
-using System.Web.Http;		
-using Template.Web.Providers;		
-		
+﻿using Microsoft.Owin;
+using Microsoft.Owin.Security.OAuth;
+using Owin;
+using System;
+using System.Web.Http;
+using Template.Core.Models;
+using Template.Web.Providers;
+
 [assembly: OwinStartupAttribute(typeof(Template.Web.Startup))]		
 namespace Template.Web
 {		
@@ -20,7 +21,11 @@ namespace Template.Web
         }		
 		
         public void ConfigureOAuth(IAppBuilder app)
-        {		
+        {
+            // Configure the db context and user manager to use a single instance per request
+            app.CreatePerOwinContext(ApplicationDbContext.Create);
+            app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
+
             OAuthAuthorizationServerOptions OAuthServerOptions = new OAuthAuthorizationServerOptions()
             {		
                 AllowInsecureHttp = true,		
