@@ -14,7 +14,8 @@ namespace Template.Web
         {		
             HttpConfiguration config = new HttpConfiguration();		
 		
-            ConfigureOAuth(app);		
+            //ConfigureOAuth(app);
+			ConfigureAuth(app);			
 		
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);		
         }		
