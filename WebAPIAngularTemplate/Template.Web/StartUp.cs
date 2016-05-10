@@ -5,6 +5,7 @@ using System;
 using System.Web.Http;
 using Template.Core.Models;
 using Template.Web.Providers;
+using Unity.WebApi;
 
 [assembly: OwinStartupAttribute(typeof(Template.Web.Startup))]		
 namespace Template.Web
@@ -13,8 +14,10 @@ namespace Template.Web
     {		
         public void Configuration(IAppBuilder app)
         {		
-            HttpConfiguration config = new HttpConfiguration();		
-		
+            HttpConfiguration config = new HttpConfiguration();
+            var container = UnityConfig.RegisterComponents();
+            config.DependencyResolver = new UnityDependencyResolver(container);
+
             ConfigureOAuth(app);		
 		
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);		
