@@ -8,7 +8,7 @@ namespace Template.Web
 {
     public static class UnityConfig
     {
-        public static void RegisterComponents()
+        public static IUnityContainer RegisterComponents()
         {
 			var container = new UnityContainer();
 
@@ -18,7 +18,7 @@ namespace Template.Web
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<DbContext, ApplicationDbContext>();
 
-            GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
+            return container;
         }
     }
 }
