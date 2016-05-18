@@ -43,7 +43,7 @@ namespace Template.Web
 
 
             bundles.Add(new ScriptBundle("~/bundles/externalLibs").Include(
-                "~/Scripts/lodash.min.js"));
+                "~/Scripts/lodash/lodash.min.js"));
         }
     }
 }
