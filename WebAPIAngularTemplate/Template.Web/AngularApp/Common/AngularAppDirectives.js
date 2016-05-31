@@ -18,7 +18,7 @@
             }
         };
     })
-    .directive('routeLoadingIndicator', function ($rootScope, $route) {
+    .directive('routeLoadingIndicator', ['$rootScope', '$route', function ($rootScope, $route) {
         return {
             restrict: 'E',
             template: "<i ng-if='isRouteLoading' class='loading fa fa-cog fa-spin'></i>",
@@ -34,7 +34,7 @@
                 });
             }
         };
-    }).directive('ngEnter', function () {
+    }]).directive('ngEnter', function () {
         return function (scope, element, attrs) {
             element.bind("keydown keypress", function (event) {
                 if (event.which === 13) {
